@@ -1,0 +1,96 @@
+:root{
+    --white: #FFFFFF;
+    --dark-blue: #1E0E62;
+    --light-light-grey:#EBEAED;
+    --light-grey: #F1F1F1;
+    --color-P: rgba(21, 20, 57, 0.4);
+    --font-template:'DM Sans', sans-serif;
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-template);
+}
+html {
+    font-size: 62.5%;
+    background-color: var(--light-grey);
+
+}
+/* Header Styles */
+.head-container {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 10rem;
+}
+.head-left{
+    font-size: 2.4rem;
+}
+.head-left li  {
+    list-style: none;
+}
+.head-left li a {
+    text-decoration: none;
+    position: relative;
+    left: 4rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+
+}
+.head-rigth{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+}
+.head-rigth button {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 100px;
+    border: 2px solid var(--light-light-grey-grey);
+    position: relative;
+    right: 10rem;
+
+}
+.head-rigth button a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+}
+/* Main hi secction */
+.hi {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.hi .hi-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hi .hi-left .hi-title {
+    font-size: 4.3rem;
+    font-weight: 700;
+    width: 42.2rem;
+    color: var(--dark-blue);
+}
+.hi .hi-left p {
+    width: 40rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--color-P);
+    margin-top: 4rem;
+}
+.hi .hi-right img {
+    width: 57rem;
+    height: 45.1rem;
+    border-radius: 10px;
+}
