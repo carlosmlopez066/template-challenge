@@ -15,6 +15,7 @@
 html {
     font-size: 62.5%;
     background-color: var(--light-grey);
+    width: 100%;
 
 }
 /* Header Styles */
@@ -93,4 +94,44 @@ html {
     width: 57rem;
     height: 45.1rem;
     border-radius: 10px;
+}
+/* Style to Skills */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills h2 {
+    font-size: 4.2rem;
+    margin-top: 10rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+.skills .skills-description {
+    font-size: 2.2rem;
+    width: 79.3rem;
+    margin-top: 4rem;
+    color: var(--color-P);
+    text-align: center;
+}
+.skills .skills-tecnology-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 97.3rem;
+    column-gap: 10rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+.skills .skills-tecnology-title {
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+.skills .skills-tecnology-container p:nth-child(2) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    color: var(--color-P);
+    
 }
