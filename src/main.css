@@ -162,6 +162,7 @@ html {
     font-size: 2.2rem;
     margin-top: 4rem;
     color: var(--color-P);
+    text-align: center;
 }
 .experience button {
     width: 20rem;
@@ -170,6 +171,8 @@ html {
     border: none;
     margin-top: 8rem;
     background-color: var(--golden-yellow);
+    cursor: pointer;
+
 }
 .experience button a {
     font-size: 1.8rem;
@@ -191,6 +194,7 @@ html {
     width: 37rem;
     height: 24rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 .experience   h3:nth-child(2){
     font-size: 2.2rem;
