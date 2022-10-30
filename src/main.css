@@ -1,25 +1,28 @@
-:root{
+:root {
     --white: #FFFFFF;
     --dark-blue: #1E0E62;
-    --light-light-grey:#EBEAED;
+    --light-light-grey: #EBEAED;
     --light-grey: #F1F1F1;
     --Aqua: #25DAC5;
     --golden-yellow: #FFCA33;
     --color-P: rgba(21, 20, 57, 0.4);
-    --font-template:'DM Sans', sans-serif;
- 
+    --font-template: 'DM Sans', sans-serif;
+
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: var(--font-template);
 }
+
 html {
     font-size: 62.5%;
     background-color: var(--light-grey);
     width: 100%;
 
 }
+
 /* Header Styles */
 .head-container {
     background-color: var(--white);
@@ -31,12 +34,15 @@ html {
     width: 100%;
     height: 10rem;
 }
-.head-left{
+
+.head-left {
     font-size: 2.4rem;
 }
-.head-left li  {
+
+.head-left li {
     list-style: none;
 }
+
 .head-left li a {
     text-decoration: none;
     position: relative;
@@ -45,11 +51,13 @@ html {
     font-weight: 700;
 
 }
-.head-rigth{
+
+.head-rigth {
     display: flex;
     justify-content: flex-end;
     font-size: 1.6rem;
 }
+
 .head-rigth button {
     width: 10rem;
     height: 4rem;
@@ -60,11 +68,13 @@ html {
     right: 10rem;
 
 }
+
 .head-rigth button a {
     text-decoration: none;
     font-size: 1.6rem;
     color: var(--dark-blue);
 }
+
 /* Main hi secction */
 .hi {
     display: grid;
@@ -80,12 +90,14 @@ html {
     align-items: center;
     justify-content: center;
 }
+
 .hi .hi-left .hi-title {
     font-size: 4.3rem;
     font-weight: 700;
     width: 42.2rem;
     color: var(--dark-blue);
 }
+
 .hi .hi-left p {
     width: 40rem;
     font-size: 2.2rem;
@@ -93,11 +105,13 @@ html {
     color: var(--color-P);
     margin-top: 4rem;
 }
+
 .hi .hi-right img {
     width: 57rem;
     height: 45.1rem;
     border-radius: 10px;
 }
+
 /* Style to Skills */
 
 .skills {
@@ -105,12 +119,14 @@ html {
     flex-direction: column;
     align-items: center;
 }
+
 .skills h2 {
     font-size: 4.2rem;
     margin-top: 10rem;
     color: var(--dark-blue);
     font-weight: 700;
 }
+
 .skills .skills-description {
     font-size: 2.2rem;
     width: 79.3rem;
@@ -118,7 +134,8 @@ html {
     color: var(--color-P);
     text-align: center;
 }
-.skills .skills-tecnology-container{
+
+.skills .skills-tecnology-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 97.3rem;
@@ -126,11 +143,13 @@ html {
     margin-top: 8rem;
     text-align: center;
 }
+
 .skills .skills-tecnology-title {
     font-size: 1.8rem;
     color: var(--dark-blue);
     font-weight: 500;
 }
+
 .skills .skills-tecnology-container p:nth-child(2) {
     font-size: 1.6rem;
     font-weight: 400;
@@ -148,7 +167,7 @@ html {
     padding-top: 10rem;
     padding-bottom: 15rem;
     background-color: var(--white);
-    
+
 }
 
 .experience h2 {
@@ -164,6 +183,7 @@ html {
     color: var(--color-P);
     text-align: center;
 }
+
 .experience button {
     width: 20rem;
     height: 5rem;
@@ -174,6 +194,7 @@ html {
     cursor: pointer;
 
 }
+
 .experience button a {
     font-size: 1.8rem;
     text-decoration: none;
@@ -183,27 +204,30 @@ html {
 
 /* style experience grid */
 
-.experience .div-grid  {
+.experience .div-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-content: center;
     margin-top: 10rem;
     gap: 7rem 3rem;
 }
-.experience img:nth-child(1){
+
+.experience img:nth-child(1) {
     width: 37rem;
     height: 24rem;
     border-radius: 10px;
     cursor: pointer;
 }
-.experience   h3:nth-child(2){
+
+.experience h3:nth-child(2) {
     font-size: 2.2rem;
     font-weight: 500;
     color: var(--dark-blue);
     margin-top: 2rem;
-    
+
 }
-.experience p:nth-child(3){
+
+.experience p:nth-child(3) {
     font-size: 1.6rem;
     color: var(--color-P);
     width: 36.7rem;
@@ -217,6 +241,7 @@ html {
     bottom: 0;
     height: 71.5rem;
 }
+
 .footer .footer-container {
     position: absolute;
     display: flex;
@@ -226,11 +251,13 @@ html {
     width: 100%;
     height: 100%;
 }
+
 .footer .footer-container h2 {
     font-size: 5.8rem;
     color: var(--dark-blue);
 }
-.footer .footer-container .footer-container-email{
+
+.footer .footer-container .footer-container-email {
     font-size: 5rem;
     color: var(--golden-yellow);
 }
@@ -244,9 +271,122 @@ html {
     margin: 6.5rem 0rem;
     gap: 9rem;
 }
+
 .list-icons li {
     list-style: none;
 }
+
 .list-icons li a img {
     width: 2.1rem;
+}
+
+@media (max-width: 1200px) {
+    .head-rigth button {
+        background-color: var(--white);
+        border: 2px solid var(--light-grey)
+    }
+
+    .hi {
+        grid-template-columns: 50%;
+        gap: 6rem 0rem;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experience .div-grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .skills .skills-description {
+        width: 45.3rem;
+    }
+
+    .skills .skills-tecnology-container {
+        grid-template-columns: 1fr 1fr;
+        width: 60.3rem;
+    }
+
+    .experience img:nth-child(1) {
+        width: 33rem;
+        height: 20rem;
+    }
+
+    .footer .footer-container h2 {
+        text-align: center;
+        margin: 4rem 0rem;
+        width: 100%;
+    }
+
+    .footer .footer-container .footer-container-email {
+        width: 100%;
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+
+    html {
+        width: 100vw;
+    }
+
+    .skills .skills-tecnology-container {
+        grid-template-columns: 1fr;
+        width: 28.3rem;
+        position: relative;
+        right: 10rem;
+        text-align: start;
+        gap: 4rem 0;
+    }
+
+    .skills .skills-description {
+        width: 45.8rem;
+        text-align: start;
+    }
+
+    .experience p:nth-child(2) {
+        width: 45.8rem;
+    }
+
+    .experience p:nth-child(3) {
+        width: 50.4rem;
+    }
+
+    .experience .div-grid .div-mobile {
+        display: none;
+    }
+
+    .experience .div-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience img:nth-child(1) {
+        width: 50.9rem;
+        height: 28.5rem;
+    }
+
+    .footer .footer-container h2 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .footer .footer-container .footer-container-email {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hi .hi-right img {
+        width: 100vw;
+        height: 80%;
+        border-radius: 0px;
+    }
+
+    .experience img:nth-child(1) {
+        width: 100vw;
+        height: 80%;
+    }
 }
